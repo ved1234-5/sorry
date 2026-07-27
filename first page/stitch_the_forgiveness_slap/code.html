@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Heartfelt Apology</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#8b0e45",
+                        "inverse-surface": "#342f31",
+                        "secondary-fixed": "#ffd9e4",
+                        "surface-container": "#f5ebee",
+                        "surface-dim": "#e1d8db",
+                        "tertiary-fixed-dim": "#ffb0cc",
+                        "inverse-primary": "#ffb1c5",
+                        "tertiary": "#a82d68",
+                        "on-error-container": "#93000a",
+                        "secondary": "#805062",
+                        "primary-container": "#f06292",
+                        "tertiary-container": "#ec639e",
+                        "on-tertiary-fixed": "#3e0020",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#7b4c5e",
+                        "tertiary-fixed": "#ffd9e4",
+                        "surface-container-high": "#efe6e9",
+                        "surface-tint": "#ab2c5d",
+                        "primary-fixed": "#ffd9e1",
+                        "on-background": "#1f1a1d",
+                        "on-tertiary-container": "#5c0033",
+                        "secondary-container": "#fec1d6",
+                        "on-secondary-fixed-variant": "#65394b",
+                        "on-primary-container": "#5e002b",
+                        "on-error": "#ffffff",
+                        "surface": "#fff8f9",
+                        "on-primary-fixed": "#3f001b",
+                        "on-surface-variant": "#574146",
+                        "primary-fixed-dim": "#ffb1c5",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#330f1f",
+                        "surface-container-low": "#fbf1f4",
+                        "inverse-on-surface": "#f8eef1",
+                        "primary": "#ab2c5d",
+                        "on-surface": "#1f1a1d",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#f2b6cb",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fff8f9",
+                        "surface-variant": "#eae0e3",
+                        "surface-container-highest": "#eae0e3",
+                        "outline": "#8a7176",
+                        "background": "#fff8f9",
+                        "on-tertiary-fixed-variant": "#890f50",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#ddbfc5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "element-gap": "12px",
+                        "unit": "8px",
+                        "container-padding": "24px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Bricolage Grotesque"],
+                        "headline-lg": ["Bricolage Grotesque"],
+                        "headline-xl": ["Bricolage Grotesque"],
+                        "label-bold": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .bg-pattern {
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDDC5xg0zSw-7EfsXdZIpMaHvvSuhg8shr9UF484O5IOlfHWasowRY7JAtql6NA5BAmOcYMVemhzt0R6QVN1Wp07mXjfwWZM90-d5F5VyQkqU6M_zZaTUDgTlLboG4El1Cb7vPYMDjzU4UpY_71zbxAwzpNaf4fk_e_Hc2S8QYQwuZbQCCkWG4EUuuuR5LHfAZ1GNB51fkBmD-mcfg1icgeS2oR0Wzt2NDqXZQPRmVljmE5FYQhgbVzcKZH7Z6C6jW4ZUoSg8_SXqHu');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 20px rgba(171, 44, 93, 0.3);
+        }
+
+        #animation-container canvas {
+            display: block;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-bounce-slow {
+            animation: bounce-slow 3s ease-in-out infinite;
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head>
+<body class="bg-pattern min-h-screen h-screen w-full flex flex-col antialiased overflow-hidden">
+<!-- Main Content Area -->
+<main class="relative z-10 flex flex-col items-center justify-center h-[100dvh] w-full max-w-md mx-auto px-4 text-center overflow-hidden" style="aspect-ratio: 9/16;">
+<!-- SORRY Text -->
+<div class="mb-4 animate-bounce-slow">
+<h1 class="text-[90px] font-headline-xl text-primary leading-none tracking-tighter text-glow">
+                SORRY
+            </h1>
+</div>
+<!-- Message -->
+<div class="max-w-[300px] mb-8">
+<p class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface leading-tight">
+                Agar tumne mujhe maf nhi kiya to thappad maro
+            </p>
+</div>
+<!-- Improved Hand Animation Container -->
+<div id="slap-target" class="flex flex-col items-center gap-8 w-full max-w-[320px] cursor-pointer">
+<div class="aspect-square flex items-center justify-center bg-white/20 rounded-full p-8 animate-bounce-slow"><span class="material-symbols-outlined text-primary text-[120px]" style="font-variation-settings: 'FILL' 1">front_hand</span></div>
+<button class="bg-primary text-on-primary font-headline-lg px-8 py-4 rounded-full shadow-lg active:scale-95 transition-transform uppercase tracking-widest pointer-events-none">SLAP ME</button>
+</div>
+
+<!-- Video Container (Hidden Initially) -->
+<div id="video-overlay" class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+    <div class="relative w-64 h-64 md:w-96 md:h-96 rounded-2xl overflow-hidden shadow-2xl scale-95 transition-transform duration-300" id="video-container">
+        <video id="slap-video" class="w-full h-full object-cover" playsinline preload="auto">
+            <source src="../../From Klickpin.com- 94 Travel Photo Ideas for Entertaining-pin-id-355784439332732485.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+</main>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slapTarget = document.getElementById('slap-target');
+            const videoOverlay = document.getElementById('video-overlay');
+            const videoContainer = document.getElementById('video-container');
+            const slapVideo = document.getElementById('slap-video');
+            
+            if (slapTarget) {
+                slapTarget.addEventListener('click', () => {
+                    // Show video overlay
+                    videoOverlay.classList.remove('hidden');
+                    // Small delay to allow display:block to apply before transition
+                    setTimeout(() => {
+                        videoOverlay.classList.remove('opacity-0');
+                        videoContainer.classList.remove('scale-95');
+                    }, 10);
+
+                    // Set starting time to 4 seconds
+                    slapVideo.currentTime = 4;
+                    slapVideo.play();
+                });
+            }
+
+            // Monitor video time to stop at 6 seconds and redirect
+            if (slapVideo) {
+                slapVideo.addEventListener('timeupdate', () => {
+                    if (slapVideo.currentTime >= 6) {
+                        slapVideo.pause();
+                        // Redirect to page 2
+                        window.location.href = '../../second page/stitch_the_forgiveness_slap/code.html';
+                    }
+                });
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Heartfelt Apology</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#8b0e45",
+                        "inverse-surface": "#342f31",
+                        "secondary-fixed": "#ffd9e4",
+                        "surface-container": "#f5ebee",
+                        "surface-dim": "#e1d8db",
+                        "tertiary-fixed-dim": "#ffb0cc",
+                        "inverse-primary": "#ffb1c5",
+                        "tertiary": "#a82d68",
+                        "on-error-container": "#93000a",
+                        "secondary": "#805062",
+                        "primary-container": "#f06292",
+                        "tertiary-container": "#ec639e",
+                        "on-tertiary-fixed": "#3e0020",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#7b4c5e",
+                        "tertiary-fixed": "#ffd9e4",
+                        "surface-container-high": "#efe6e9",
+                        "surface-tint": "#ab2c5d",
+                        "primary-fixed": "#ffd9e1",
+                        "on-background": "#1f1a1d",
+                        "on-tertiary-container": "#5c0033",
+                        "secondary-container": "#fec1d6",
+                        "on-secondary-fixed-variant": "#65394b",
+                        "on-primary-container": "#5e002b",
+                        "on-error": "#ffffff",
+                        "surface": "#fff8f9",
+                        "on-primary-fixed": "#3f001b",
+                        "on-surface-variant": "#574146",
+                        "primary-fixed-dim": "#ffb1c5",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#330f1f",
+                        "surface-container-low": "#fbf1f4",
+                        "inverse-on-surface": "#f8eef1",
+                        "primary": "#ab2c5d",
+                        "on-surface": "#1f1a1d",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#f2b6cb",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fff8f9",
+                        "surface-variant": "#eae0e3",
+                        "surface-container-highest": "#eae0e3",
+                        "outline": "#8a7176",
+                        "background": "#fff8f9",
+                        "on-tertiary-fixed-variant": "#890f50",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#ddbfc5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "element-gap": "12px",
+                        "unit": "8px",
+                        "container-padding": "24px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Bricolage Grotesque"],
+                        "headline-lg": ["Bricolage Grotesque"],
+                        "headline-xl": ["Bricolage Grotesque"],
+                        "label-bold": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .bg-pattern {
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCdLICFbkQg0UNIBvxfgxj_gVzFFQcGFt5OIzs_mhACoKlvNRH6wbXf56dZlFOjOc0xASfJNgYlKxytLxl4PqjMbxfpxGBy2tSwWBdbnBRBvgW_w2xRlwdHa_2mtrZKybAy3kW_ehNsb3HqkSSQhpCDe3sIrdZiBFa-XefPTMsFLWHma8WEZGKtvZMrd0gio5miFBR-ARAPsuUXXXaRdgIwfWp9AXhUB05q_pEjK6wOaRTpq6GPy2oiRcXqPiC07pZ0XCk');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 20px rgba(171, 44, 93, 0.3);
+        }
+
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-bounce-slow {
+            animation: bounce-slow 3s ease-in-out infinite;
+        }
+
+        @keyframes vibrate-subtle {
+            0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+            10% { transform: translate(-0.5px, -1px) rotate(-0.5deg); }
+            20% { transform: translate(-1.5px, 0px) rotate(0.5deg); }
+            30% { transform: translate(1.5px, 1px) rotate(0deg); }
+            40% { transform: translate(0.5px, -0.5px) rotate(0.5deg); }
+            50% { transform: translate(-0.5px, 1px) rotate(-0.5deg); }
+            60% { transform: translate(-1.5px, 0.5px) rotate(0deg); }
+            70% { transform: translate(1.5px, 0.5px) rotate(-0.5deg); }
+            80% { transform: translate(-0.5px, -0.5px) rotate(0.5deg); }
+            90% { transform: translate(0.5px, 1px) rotate(0deg); }
+            100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
+        }
+        .animate-vibrate-subtle {
+            animation: vibrate-subtle 0.8s infinite;
+        }
+
+        @keyframes magic-burst {
+            0% { transform: scale(1); filter: brightness(1); }
+            50% { transform: scale(1.5) rotate(15deg); filter: brightness(2) drop-shadow(0 0 50px #ffb1c5); opacity: 1; }
+            100% { transform: scale(3) rotate(-15deg); opacity: 0; filter: blur(10px); }
+        }
+        .animate-magic-burst {
+            animation: magic-burst 0.8s forwards ease-in-out;
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #ffb1c5;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #ab2c5d, 0 0 20px #ffffff;
+            pointer-events: none;
+            z-index: 50;
+            animation: sparkle-fade 0.6s forwards;
+        }
+
+        @keyframes sparkle-fade {
+            0% { transform: translate(0, 0) scale(1); opacity: 1; }
+            100% { transform: translate(var(--tx), var(--ty)) scale(0); opacity: 0; }
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-pattern min-h-screen h-screen w-full flex flex-col antialiased overflow-hidden">
+<!-- Main Content Area -->
+<main class="relative z-10 flex flex-col items-center justify-center h-[100dvh] w-full max-w-md mx-auto px-4 text-center overflow-hidden" style="aspect-ratio: 9/16;">
+<!-- Interactive Elements -->
+<div class="flex flex-col items-center justify-center w-full max-w-[320px] relative z-20 cursor-pointer" id="envelope-container">
+<img id="envelope-img" alt="Envelope" class="w-full h-auto drop-shadow-2xl animate-bounce-slow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHlWJh_VQ8YKN-6XnbEuj6cTZj-mjJyVh1GhF6Lh7-i80Rm3XTw4ExTNU1Lj4Fv6eJ8ePmYHc3pTq4Epmqbd72sMlusbSS_DqFYn10ivrVy1nsrxjsAx-d-xbsu4IRAWnTim09eJjNZL9JVlywRce3T90UKjaRallf4PW3-6SlMjYidkhwVWJBQb-EpkVlw5Lw7k0IwbcY18mYJ-k2058eGL4lF2d0wz7eNK2A_NN3Fe818NT4OCoZ9WPY7T5mkdQkqNU"/>
+</div>
+
+<!-- Letter Container (Hidden Initially) -->
+<div id="letter-container" class="fixed inset-0 z-30 flex flex-col items-center justify-center p-4 hidden opacity-0 transition-opacity duration-1000 bg-black/60 backdrop-blur-sm overflow-y-auto">
+    <div class="relative w-full max-w-sm my-auto bg-surface rounded-3xl p-6 shadow-2xl flex flex-col items-center transform scale-95 transition-transform duration-700" id="letter-content">
+        
+        <!-- HTML Letter -->
+        <div class="w-full bg-[#fdf5e6] rounded-lg p-5 shadow-inner mb-6 relative overflow-hidden border-2 border-[#e8d5c4] text-left" style="font-family: 'Times New Roman', serif;">
+            <div class="absolute inset-0 opacity-30 pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');"></div>
+            
+            <p class="text-gray-800 text-[15px] italic leading-relaxed relative z-10">
+                Dear You,<br><br>
+                I'm really sorry.<br>
+                I never meant to hurt you or make you feel sad. You mean a lot to me, and the last thing I want is to see you upset because of me.<br><br>
+                If I could take back my words or actions, I would do it in a heartbeat. I know saying "sorry" isn't enough, but I truly hope you can find it in your heart to forgive me.<br><br>
+                Thank you for being so kind, patient and understanding. You mean the world to me, and I promise to do better, to be better, for you.<br><br>
+                I miss you and I value you more than you know.<br>
+                I'm so, so sorry.<br><br>
+                Always yours,
+            </p>
+        </div>
+        
+        <div class="w-full text-center pb-2">
+            <h3 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface mb-4">Can you forgive now?</h3>
+            <div class="flex flex-col gap-3 w-full" id="letter-buttons">
+                <button id="btn-forgiven" class="w-full bg-primary text-on-primary font-label-bold py-4 rounded-full hover:bg-primary/90 transition-transform active:scale-95 shadow-lg text-lg">Forgiven</button>
+                <button id="btn-more-magic" class="w-full border-2 border-primary text-primary font-label-bold py-3 rounded-full hover:bg-primary/10 transition-all duration-300">Want to see more magic?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Diwali Fireworks Canvas -->
+<canvas id="fireworks-canvas" class="fixed inset-0 w-full h-full pointer-events-none z-40 hidden"></canvas>
+
+<!-- Thank You Message -->
+<div id="thank-you-msg" class="fixed inset-0 z-50 flex items-center justify-center pointer-events-none hidden opacity-0 transition-opacity duration-1000">
+    <h1 class="text-[80px] md:text-[100px] font-headline-xl text-primary leading-none tracking-tighter text-glow animate-bounce-slow text-center drop-shadow-2xl">
+        THANK YOU
+    </h1>
+</div>
+
+</main>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const envelopeContainer = document.getElementById('envelope-container');
+        const envelopeImg = document.getElementById('envelope-img');
+        const letterContainer = document.getElementById('letter-container');
+        const letterContent = document.getElementById('letter-content');
+        const btnForgiven = document.getElementById('btn-forgiven');
+        const btnMoreMagic = document.getElementById('btn-more-magic');
+        const fireworksCanvas = document.getElementById('fireworks-canvas');
+        const thankYouMsg = document.getElementById('thank-you-msg');
+        
+        let envelopeClicked = false;
+
+        function createSparkles(x, y) {
+            for(let i=0; i<20; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = x + 'px';
+                sparkle.style.top = y + 'px';
+                // Random explosion direction
+                const angle = Math.random() * Math.PI * 2;
+                const distance = 100 + Math.random() * 150;
+                const tx = Math.cos(angle) * distance;
+                const ty = Math.sin(angle) * distance;
+                sparkle.style.setProperty('--tx', `${tx}px`);
+                sparkle.style.setProperty('--ty', `${ty}px`);
+                document.body.appendChild(sparkle);
+                
+                setTimeout(() => sparkle.remove(), 600);
+            }
+        }
+
+        envelopeContainer.addEventListener('click', (e) => {
+            if (envelopeClicked) return;
+            envelopeClicked = true;
+
+            // Magic burst
+            envelopeImg.classList.remove('animate-bounce-slow');
+            envelopeImg.classList.add('animate-magic-burst');
+            
+            const rect = envelopeImg.getBoundingClientRect();
+            createSparkles(rect.left + rect.width/2, rect.top + rect.height/2);
+
+            setTimeout(() => {
+                envelopeContainer.style.display = 'none';
+                
+                // Show letter
+                letterContainer.classList.remove('hidden');
+                setTimeout(() => {
+                    letterContainer.classList.remove('opacity-0');
+                    letterContent.classList.remove('scale-95');
+                }, 50);
+            }, 700);
+        });
+
+        btnMoreMagic.addEventListener('click', () => {
+            btnMoreMagic.style.opacity = '0';
+            btnMoreMagic.style.transform = 'scale(0.8)';
+            setTimeout(() => {
+                btnMoreMagic.style.display = 'none';
+            }, 300);
+        });
+
+        btnForgiven.addEventListener('click', () => {
+            // Hide letter slowly
+            letterContainer.classList.add('opacity-0');
+            setTimeout(() => {
+                letterContainer.classList.add('hidden');
+                startFireworks();
+            }, 500);
+        });
+
+        // --- Fireworks Logic ---
+        function startFireworks() {
+            fireworksCanvas.classList.remove('hidden');
+            thankYouMsg.classList.remove('hidden');
+            setTimeout(() => {
+                thankYouMsg.classList.remove('opacity-0');
+            }, 100);
+
+            const ctx = fireworksCanvas.getContext('2d');
+            let w, h;
+            
+            function resize() {
+                w = fireworksCanvas.width = window.innerWidth;
+                h = fireworksCanvas.height = window.innerHeight;
+            }
+            window.addEventListener('resize', resize);
+            resize();
+
+            const particles = [];
+            const colors = ['#ffb1c5', '#ab2c5d', '#ffd9e4', '#f06292', '#ffffff', '#ffd700'];
+
+            function createFirework(x, y) {
+                const particleCount = 100 + Math.random() * 100;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                for(let i=0; i<particleCount; i++) {
+                    const angle = Math.random() * Math.PI * 2;
+                    const speed = Math.random() * 8 + 2;
+                    particles.push({
+                        x: x,
+                        y: y,
+                        vx: Math.cos(angle) * speed,
+                        vy: Math.sin(angle) * speed,
+                        radius: Math.random() * 3 + 1,
+                        color: Math.random() > 0.5 ? color : '#ffffff',
+                        alpha: 1,
+                        decay: Math.random() * 0.02 + 0.015
+                    });
+                }
+            }
+
+            function loop() {
+                requestAnimationFrame(loop);
+                // Trail effect
+                ctx.globalCompositeOperation = 'destination-out';
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+                ctx.fillRect(0, 0, w, h);
+                ctx.globalCompositeOperation = 'lighter';
+
+                // Randomly spawn fireworks
+                if (Math.random() < 0.05) {
+                    createFirework(
+                        Math.random() * w,
+                        Math.random() * (h * 0.5)
+                    );
+                }
+
+                for(let i = particles.length - 1; i >= 0; i--) {
+                    const p = particles[i];
+                    p.vy += 0.05; // gravity
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.alpha -= p.decay;
+
+                    if (p.alpha <= 0) {
+                        particles.splice(i, 1);
+                        continue;
+                    }
+
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(${hexToRgb(p.color)}, ${p.alpha})`;
+                    ctx.fill();
+                }
+            }
+
+            function hexToRgb(hex) {
+                const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+                return result ? 
+                    `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}` 
+                    : '255, 255, 255';
+            }
+
+            // Initial massive burst
+            createFirework(w/2, h/2);
+            createFirework(w*0.3, h*0.4);
+            createFirework(w*0.7, h*0.4);
+            
+            loop();
+        }
+    });
+</script>
+</body></html>

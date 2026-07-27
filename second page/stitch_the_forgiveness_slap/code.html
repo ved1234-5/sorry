@@ -1,0 +1,348 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<title>Heartfelt Apology</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#8b0e45",
+                        "inverse-surface": "#342f31",
+                        "secondary-fixed": "#ffd9e4",
+                        "surface-container": "#f5ebee",
+                        "surface-dim": "#e1d8db",
+                        "tertiary-fixed-dim": "#ffb0cc",
+                        "inverse-primary": "#ffb1c5",
+                        "tertiary": "#a82d68",
+                        "on-error-container": "#93000a",
+                        "secondary": "#805062",
+                        "primary-container": "#f06292",
+                        "tertiary-container": "#ec639e",
+                        "on-tertiary-fixed": "#3e0020",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#7b4c5e",
+                        "tertiary-fixed": "#ffd9e4",
+                        "surface-container-high": "#efe6e9",
+                        "surface-tint": "#ab2c5d",
+                        "primary-fixed": "#ffd9e1",
+                        "on-background": "#1f1a1d",
+                        "on-tertiary-container": "#5c0033",
+                        "secondary-container": "#fec1d6",
+                        "on-secondary-fixed-variant": "#65394b",
+                        "on-primary-container": "#5e002b",
+                        "on-error": "#ffffff",
+                        "surface": "#fff8f9",
+                        "on-primary-fixed": "#3f001b",
+                        "on-surface-variant": "#574146",
+                        "primary-fixed-dim": "#ffb1c5",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#330f1f",
+                        "surface-container-low": "#fbf1f4",
+                        "inverse-on-surface": "#f8eef1",
+                        "primary": "#ab2c5d",
+                        "on-surface": "#1f1a1d",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#f2b6cb",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fff8f9",
+                        "surface-variant": "#eae0e3",
+                        "surface-container-highest": "#eae0e3",
+                        "outline": "#8a7176",
+                        "background": "#fff8f9",
+                        "on-tertiary-fixed-variant": "#890f50",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#ddbfc5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "element-gap": "12px",
+                        "unit": "8px",
+                        "container-padding": "24px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Bricolage Grotesque"],
+                        "headline-lg": ["Bricolage Grotesque"],
+                        "headline-xl": ["Bricolage Grotesque"],
+                        "label-bold": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .bg-pattern {
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDYQA5L2FX6_RtFkgp4OSrfiZMTZyK0hYuM3qucJGyKIduQONGR1zmGA2KiRjPA-kiXknHh2r0GLbDoEESy_mr1sNwsg0MruJ8NWSRlYKGXWLO2v1pqMSy-_9k8oi_Vit_wZTJcM1eK7nxEr5vPhQ90Wgeldd7oiRBEMrS_lBA7O28GX1ZOWJ9JwTW0FsisN1ZdJztfJB3xJCZl1aUC9y0aFThQiwKMSmYlsQ0K-0kifH9pCjAQBIwN6mE_ZU87emiLQN78YJRmVbYj');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 20px rgba(171, 44, 93, 0.3);
+        }
+
+        @keyframes bounce-slow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .animate-bounce-slow {
+            animation: bounce-slow 3s ease-in-out infinite;
+        }
+
+        @keyframes vibrate-subtle {
+            0% { transform: translate(0.5px, 0.5px) rotate(0deg); }
+            10% { transform: translate(-0.5px, -1px) rotate(-0.5deg); }
+            20% { transform: translate(-1.5px, 0px) rotate(0.5deg); }
+            30% { transform: translate(1.5px, 1px) rotate(0deg); }
+            40% { transform: translate(0.5px, -0.5px) rotate(0.5deg); }
+            50% { transform: translate(-0.5px, 1px) rotate(-0.5deg); }
+            60% { transform: translate(-1.5px, 0.5px) rotate(0deg); }
+            70% { transform: translate(1.5px, 0.5px) rotate(-0.5deg); }
+            80% { transform: translate(-0.5px, -0.5px) rotate(0.5deg); }
+            90% { transform: translate(0.5px, 1px) rotate(0deg); }
+            100% { transform: translate(0.5px, -1px) rotate(-0.5deg); }
+        .animate-vibrate-subtle {
+            animation: vibrate-subtle 0.8s infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-slow {
+            animation: spin 4s linear infinite;
+        }
+        
+        .radio-press {
+            transform: scaleY(0.95) translateY(5px);
+            transition: transform 0.1s;
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-pattern min-h-screen h-screen w-full flex flex-col antialiased overflow-hidden">
+<!-- Main Content Area -->
+<main class="relative z-10 flex flex-col items-center justify-center h-[100dvh] w-full max-w-md mx-auto px-4 text-center overflow-hidden" style="aspect-ratio: 9/16;">
+<!-- SORRY Text -->
+
+<!-- Message -->
+
+<!-- Interactive Elements -->
+<div class="flex flex-col items-center justify-center w-full max-w-[320px] relative mt-32">
+    
+    <!-- Music Player UI (Hidden Initially) -->
+    <div id="music-player" class="absolute bottom-full left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 transition-opacity duration-500 pointer-events-none z-30 w-full mb-8">
+        <div class="relative w-24 h-24 mb-2">
+            <!-- CD Image -->
+            <img id="cd-image" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CD_autolev_crop.jpg" alt="CD" class="w-full h-full rounded-full object-cover border-2 border-gray-800 shadow-lg" style="animation-play-state: paused;">
+            <!-- Center hole -->
+            <div class="absolute inset-0 m-auto w-4 h-4 bg-gray-900 rounded-full"></div>
+        </div>
+        
+        <!-- Controls Panel -->
+        <div class="bg-gray-900/90 text-white rounded-xl p-3 shadow-xl backdrop-blur-sm border border-gray-700 flex flex-col items-center w-64 pointer-events-auto">
+            <div class="text-xs font-bold mb-1 truncate w-full text-center text-primary-fixed">Maafi Music Video</div>
+            
+            <div class="w-full flex items-center gap-2 mb-2">
+                <span id="time-current" class="text-[10px] w-8 text-right">0:00</span>
+                <div class="flex-1 h-1.5 bg-gray-700 rounded-full overflow-hidden relative cursor-pointer" id="progress-container">
+                    <div id="progress-bar" class="h-full bg-primary w-0"></div>
+                </div>
+                <span id="time-total" class="text-[10px] w-8">0:00</span>
+            </div>
+            
+            <div class="flex items-center gap-4 justify-center">
+                <button id="btn-back" class="hover:text-primary transition-colors"><span class="material-symbols-outlined text-xl">fast_rewind</span></button>
+                <button id="btn-play-pause" class="w-8 h-8 flex items-center justify-center bg-primary rounded-full hover:scale-105 transition-transform"><span class="material-symbols-outlined" id="icon-play-pause">pause</span></button>
+                <button id="btn-forth" class="hover:text-primary transition-colors"><span class="material-symbols-outlined text-xl">fast_forward</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Radio Container -->
+    <div id="radio-container" class="relative z-20 w-64 h-auto flex items-center justify-center mb-8 cursor-pointer">
+        <img id="radio-img" alt="Radio" class="w-full h-auto drop-shadow-2xl animate-vibrate-subtle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxfJ_DQdWeE2JGgT9P6WhJC0LLDcJBJQKjG2nu10l0xH4q1y8ckhdkPtGEBCQpAo6B-HT6g5wCEyUMPQz2gRo-HqfuCeeZ6jXWsclsAwLbS_GGfBfWer88qc_vqTkWncyFrhM3gJ3wSdGDLEmccgU1VYuIA0_iNgPrkis60gpgyQmzS2L_tucvleS1BFK-9TBBCDLUhbc3DBgJdNaC_KB2_48u3r1xJOJGKFxAgmK-cqbQlUkF1q76EchL-IziBuvEHFDi_YtFjrEH">
+    </div>
+    <!-- Cat Image -->
+    <img alt="Cute Cat" class="w-56 h-56 object-cover rounded-[3rem] shadow-xl z-10 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUilPA-ACO615kt67gsTyzIHtg3FHCz4oC1yp3cnVD2GyRIlFJHGpAKzuDu5v4RJlCbL14GhlQ_uQRft9khdeatc_jetLOjOZjYopxOKNvk22KhH-_rnwvffs2EteAjksrprMBtjnP053R_LFWUlsN9L8oXwvgTQ2UbcoWnR702J6QmPEG9EKUnBSAUOEI4AcZx5IwSAOrLEPk_u74EDXON7cW2HmeNM6dX0lMtXoN1jIm1cZ3s-vGCUSh7B7n7sC4tRldyeOWj59o">
+</div>
+</main>
+
+<!-- Audio Element -->
+<audio id="bg-audio" preload="auto">
+    <source src="../../Maafi  Music Video  Pritam and Pedro  Shreya Ghoshal, Swanand Kirkire, Shantanu Moitra - Sony Music India.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Pop-up Modal (Hidden Initially) -->
+<div id="popup-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm px-4">
+    <div class="bg-surface rounded-3xl p-8 max-w-sm w-full shadow-2xl text-center transform scale-95 transition-transform duration-300" id="popup-content">
+        <h2 class="text-headline-lg-mobile font-headline-lg-mobile text-on-surface mb-6">Have you forgiven me?</h2>
+        
+        <div id="popup-buttons" class="flex flex-col gap-3">
+            <button id="btn-forgave" class="w-full bg-primary text-on-primary font-label-bold py-3 rounded-full hover:bg-primary/90 transition-colors">Forgave</button>
+            <button id="btn-didnt-forgive" class="w-full border-2 border-primary text-primary font-label-bold py-3 rounded-full hover:bg-primary/10 transition-colors">Didn't forgive</button>
+        </div>
+
+        <div id="popup-message" class="hidden flex-col gap-4">
+            <p class="text-body-lg text-error font-medium">Oh shitt, we were supposed to move forward—go back and click 'Didn't forgive'.</p>
+            <button id="btn-go-back" class="text-primary font-label-bold py-2 hover:underline">Go Back</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const radioContainer = document.getElementById('radio-container');
+        const radioImg = document.getElementById('radio-img');
+        const audio = document.getElementById('bg-audio');
+        
+        const musicPlayer = document.getElementById('music-player');
+        const cdImage = document.getElementById('cd-image');
+        const btnPlayPause = document.getElementById('btn-play-pause');
+        const iconPlayPause = document.getElementById('icon-play-pause');
+        const btnBack = document.getElementById('btn-back');
+        const btnForth = document.getElementById('btn-forth');
+        const timeCurrent = document.getElementById('time-current');
+        const timeTotal = document.getElementById('time-total');
+        const progressBar = document.getElementById('progress-bar');
+        const progressContainer = document.getElementById('progress-container');
+
+        const popupModal = document.getElementById('popup-modal');
+        const popupContent = document.getElementById('popup-content');
+        const btnForgave = document.getElementById('btn-forgave');
+        const btnDidntForgive = document.getElementById('btn-didnt-forgive');
+        const popupButtons = document.getElementById('popup-buttons');
+        const popupMessage = document.getElementById('popup-message');
+        const btnGoBack = document.getElementById('btn-go-back');
+
+        let isPlaying = false;
+        let hasStarted = false;
+
+        function formatTime(seconds) {
+            if (isNaN(seconds)) return "0:00";
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s < 10 ? '0' : ''}${s}`;
+        }
+
+        function showPopup() {
+            popupModal.classList.remove('hidden');
+            setTimeout(() => {
+                popupModal.classList.remove('opacity-0');
+                popupContent.classList.remove('scale-95');
+            }, 10);
+        }
+
+        radioContainer.addEventListener('click', () => {
+            if (!hasStarted) {
+                // Initial click
+                hasStarted = true;
+                
+                // Stop vibrate, add press effect
+                radioImg.classList.remove('animate-vibrate-subtle');
+                radioImg.classList.add('radio-press');
+                setTimeout(() => radioImg.classList.remove('radio-press'), 150);
+
+                // Show player
+                musicPlayer.classList.remove('opacity-0');
+                cdImage.classList.add('animate-spin-slow');
+
+                // Play audio
+                audio.play();
+                isPlaying = true;
+                cdImage.style.animationPlayState = 'running';
+                iconPlayPause.textContent = 'pause';
+            }
+        });
+
+        // Player Controls
+        btnPlayPause.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (isPlaying) {
+                audio.pause();
+                isPlaying = false;
+                cdImage.style.animationPlayState = 'paused';
+                iconPlayPause.textContent = 'play_arrow';
+                showPopup();
+            } else {
+                audio.play();
+                isPlaying = true;
+                cdImage.style.animationPlayState = 'running';
+                iconPlayPause.textContent = 'pause';
+            }
+        });
+
+        btnBack.addEventListener('click', (e) => {
+            e.stopPropagation();
+            audio.currentTime = Math.max(0, audio.currentTime - 10);
+        });
+
+        btnForth.addEventListener('click', (e) => {
+            e.stopPropagation();
+            audio.currentTime = Math.min(audio.duration, audio.currentTime + 10);
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            if (audio.duration) {
+                timeCurrent.textContent = formatTime(audio.currentTime);
+                progressBar.style.width = `${(audio.currentTime / audio.duration) * 100}%`;
+            }
+        });
+
+        audio.addEventListener('loadedmetadata', () => {
+            timeTotal.textContent = formatTime(audio.duration);
+        });
+
+        audio.addEventListener('ended', () => {
+            isPlaying = false;
+            cdImage.style.animationPlayState = 'paused';
+            iconPlayPause.textContent = 'play_arrow';
+            showPopup();
+        });
+
+        progressContainer.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const rect = progressContainer.getBoundingClientRect();
+            const pos = (e.clientX - rect.left) / rect.width;
+            audio.currentTime = pos * audio.duration;
+        });
+
+        // Popup logic
+        btnForgave.addEventListener('click', () => {
+            popupButtons.classList.add('hidden');
+            popupMessage.classList.remove('hidden');
+            popupMessage.classList.add('flex');
+        });
+
+        btnGoBack.addEventListener('click', () => {
+            popupMessage.classList.remove('flex');
+            popupMessage.classList.add('hidden');
+            popupButtons.classList.remove('hidden');
+        });
+
+        btnDidntForgive.addEventListener('click', () => {
+            window.location.href = '../../3d page/stitch_the_forgiveness_slap/code.html';
+        });
+    });
+</script></body></html>
